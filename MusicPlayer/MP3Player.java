@@ -11,7 +11,7 @@ public class MP3Player extends MusicPlayer{
 
     }
 
-    public void play() {
+public void play() {
         System.out.println("Utwór nr: " + currentSong);
         System.out.println(this.songs[currentSong]);
     }
@@ -27,7 +27,7 @@ public class MP3Player extends MusicPlayer{
     }
 
 
-    public void next() {
+public void next() {
         if (this.songs.length-1 > this.currentSong) {
             this.currentSong++;
             this.play();
@@ -38,7 +38,7 @@ public class MP3Player extends MusicPlayer{
     }
 
 
-    public void previous() {
+public void previous() {
         if (this.currentSong > 0) {
             this.currentSong--;
             this.play();
