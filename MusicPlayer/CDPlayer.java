@@ -2,18 +2,14 @@ package MusicPlayer;
 
 public class CDPlayer extends MusicPlayer{
 
-    Song [] songs= {
-            new Song("AAAA", "AAAAA", "AAA"),
-            new Song ("BBBBB", "BBB", "BBBBB"),
-            new Song ("CCC", "CCCC", "CCCC"),
-            new Song ("DDDDDD", "DDDD", "DDD")
-    };
+    Song [] songs;
 
 
     private int currentSong = 0;
 
-    public CDPlayer() {
+    public CDPlayer(Song[] s) {
         System.out.println("Gra odtwarzacz CD");
+        this.songs = s;
     }
 
     public void play() {

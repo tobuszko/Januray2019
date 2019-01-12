@@ -1,22 +1,19 @@
 package MusicPlayer;
 
 public class MP3Player extends MusicPlayer{
-    Song [] songs= {
-        new Song("Kazik", "Tata dilera", "Tata dilera"),
-        new Song ("aaa", "aaa", "aaa"),
-        new Song ("bbb", "bbb", "bbb"),
-        new Song ("ccc", "ccc", "ccc")
-    };
+    Song [] songs;
 
     private int currentSong = 0;
 
-    public MP3Player() {
+    public MP3Player(Song[] s) {
         System.out.println("Gra odtwarzacz MP3");
+        this.songs = s;
+
     }
 
     public void play() {
+        System.out.println("Utwór nr: " + currentSong);
         System.out.println(this.songs[currentSong]);
-
     }
 
 
