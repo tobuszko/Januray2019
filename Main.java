@@ -14,13 +14,15 @@ public class Main {
             wm.modeForGeneral();
 
 
+            B b = new B();
+            b.test();
 
     }
 }
 
 
 class  A {
-    private int counter;
+    protected int counter;
 
     public int getCounter() {
         return counter;
@@ -32,6 +34,17 @@ class  A {
 
     public void print (){
         System.out.println(counter + "Jestem obieketm klasy A");
+    }
+
+}
+
+
+class B extends A {
+    A a = new A();
+
+    void test (){
+        a.counter = 100;
+        System.out.println(a.counter);
     }
 
 }
