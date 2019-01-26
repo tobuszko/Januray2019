@@ -20,7 +20,7 @@ public class MonetCristo {
 
         BookReader br = new BookReader("Collections/crsto10.txt");
         System.out.println("");
-        System.out.println("Listowanie co 100 wiersza");
+        System.out.println("Listowanie co 100 wiersz");
         br.every100();
         System.out.println("");
         System.out.println("Poszukiwanie najdłuższego wiersza");
