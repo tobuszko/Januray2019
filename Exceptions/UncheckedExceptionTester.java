@@ -13,6 +13,7 @@ public class UncheckedExceptionTester {
 
     public int getNumberFromString (String number) {
         try {
+
             return Integer.parseInt(number);
         } catch (NumberFormatException e) {
             System.out.println("Upewnij się, że przekazywany string to liczba");
