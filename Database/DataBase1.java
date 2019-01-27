@@ -8,7 +8,7 @@ public class DataBase1 {
 
     public static void main(String[] args) {
 
-        String connectionURL = "jdbc:sqlserver://morfeusz.wszib.edu.pl:1433;databaseName=AdventureWorks;user=obuszko;password=Nzpbe123.";
+        String connectionURL = "jdbc:sqlserver://morfeusz.wszib.edu.pl:1433;databaseName=AdventureWorks;integratedSecurity=true;";
         try {
             Connection con = DriverManager.getConnection(connectionURL);
 
